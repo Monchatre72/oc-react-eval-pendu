@@ -31,3 +31,25 @@
     transform: rotate(360deg);
   }
 }
+
+.phrase {
+   letter-spacing: 5px;
+ }
+
+.touch {
+
+  background-color: #4CAF50; /* Green */
+  border: 2px solid black;
+  color: white;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.keyboard {
+  width: 400px;
+  background-color: black
+}
