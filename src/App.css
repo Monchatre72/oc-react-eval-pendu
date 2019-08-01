@@ -32,24 +32,29 @@
   }
 }
 
-.phrase {
+.masque {
    letter-spacing: 5px;
  }
 
 .touch {
 
-  background-color: #4CAF50; /* Green */
+  background-color: grey ;
   border: 2px solid black;
   color: white;
-  width: 30px;
+  width: 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 21px;
   border-radius: 4px;
 }
 
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .keyboard {
-  width: 400px;
+  width: 520px;
   background-color: black
 }
