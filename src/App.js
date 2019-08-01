@@ -46,12 +46,15 @@ class App extends Component {
     }
 
     handleKeyOrClick = key => {
+       if (
+       !this.state.keyPressed.has(key.toUpperCase()) &&
+       !this.state.word.includes(key.toUpperCase()) &&
+        this.state.essai!==this.state.maxEssai
+       ){
+         this.setState({essai : this.state.essai+1})
+       }
+
        this.setState({keyPressed : this.state.keyPressed.add(key.toUpperCase())})
-       if (!this.state.word.includes(key.toUpperCase())
-       && this.state.essai!==this.state.maxEssai
-       && !this.state.keyPressed.has(key.toUpperCase())
-       )
-       this.setState({essai : this.state.essai+1})
     }
 
 render() {
